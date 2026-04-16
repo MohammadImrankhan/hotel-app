@@ -1,0 +1,30 @@
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+/* IMPORTANT FIX */
+.dropdown-menu {
+  position: absolute;
+  top: 40px; /* instead of 100% */
+  left: 0;
+  background: white;
+  min-width: 180px;
+  border: 1px solid #ddd;
+  z-index: 9999;
+  padding: 10px 0;
+    background: red;
+}
+
+/* FIX LIST STYLE */
+.dropdown-menu li {
+  list-style: none;
+  padding: 8px 15px;
+}
+
+/* FIX LINK DISPLAY */
+.dropdown-menu a {
+  display: block;
+  color: #333;
+  
+}

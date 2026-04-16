@@ -1,0 +1,21 @@
+/* FULL SCREEN CENTER */
+.login-container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* premium background */
+  /* background: linear-gradient(to right, #1e3c2f, #4b7f52); */
+}
+
+/* LOGIN CARD */
+.login-box {
+  width: 100%;
+  max-width: 350px;
+  padding: 30px;
+  border-radius: 15px;
+
+  background: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}

@@ -1,0 +1,85 @@
+/* IMAGE */
+.hero-img {
+  height: 100vh;
+  object-fit: cover;
+  animation: zoomEffect 10s ease-in-out infinite;
+}
+
+/* DARK OVERLAY */
+.hero-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.4)
+  );
+  z-index: 1;
+}
+
+/* TEXT POSITION */
+.hero-caption {
+  z-index: 2;
+  bottom: 30%;
+}
+
+/* TEXT STYLE */
+.hero-caption h1 {
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.hero-caption p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* GOLD BUTTON */
+.btn-gold {
+  background: #c8a96a;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-gold:hover {
+  background: #b89550;
+  color: white;
+}
+
+/* TEXT ANIMATION */
+.animate-text {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease forwards;
+}
+
+.animate-text.delay {
+  animation-delay: 0.5s;
+}
+
+.animate-btn {
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+/* KEYFRAMES */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* IMAGE ZOOM */
+@keyframes zoomEffect {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}

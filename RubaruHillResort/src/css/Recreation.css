@@ -1,0 +1,37 @@
+/* SECTION TITLE */
+.section-title {
+  font-weight: 600;
+  color: #1e3c2f;
+}
+
+/* CARD */
+.recreation-card {
+  background: white;
+  padding: 25px 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* ICON */
+.recreation-card .icon {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+/* HOVER EFFECT */
+.recreation-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* TEXT */
+.recreation-card h5 {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.recreation-card p {
+  font-size: 14px;
+  color: #666;
+}

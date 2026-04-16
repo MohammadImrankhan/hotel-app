@@ -1,0 +1,7 @@
+D:\Projects\ClientProject\ClientProject\RubaruAPI\wwwroot\uploads\room_1\7046d87a-e068-4021-983f-b27192795b2c.jpeg
+D:\Projects\ClientProject\ClientProject\RubaruAPI\wwwroot\uploads\room_1\9d01232d-2045-4be4-a841-85f49e8dec31.png
+D:\Projects\ClientProject\ClientProject\RubaruAPI\wwwroot\uploads\room_1\d96caa2a-1140-4227-9577-1dcb3ddce08f.jpeg
+D:\Projects\ClientProject\ClientProject\RubaruAPI\wwwroot\uploads\room_2\a22af34a-2161-421e-9ce9-369f24225ab1.jpeg
+D:\Projects\ClientProject\ClientProject\RubaruAPI\wwwroot\uploads\room_3\2d91efc2-786c-40f4-8dbf-c81a6fccba1b.jpeg
+D:\Projects\ClientProject\ClientProject\RubaruAPI\wwwroot\uploads\room_3\c9b45d32-ff55-4a89-9bc4-f1922337edfd.png
+D:\Projects\ClientProject\ClientProject\RubaruAPI\wwwroot\uploads\room_3\fd1391aa-a8e6-4064-bcb9-bf6d31136479.jpeg

@@ -1,0 +1,34 @@
+.amenity-box {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+.amenity-box p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.amenity-box:hover {
+  background: #c8a96a;
+  color: white;
+}
+.social-text {
+  margin-left: 6px;
+  opacity: 1;          /* always visible */
+  visibility: visible; /* always visible */
+  font-size: 13px;
+}
+.amenity-box {
+  padding: 20px;
+  border-radius: 10px;
+  background: #f8f9fa;
+  transition: 0.3s;
+}
+
+/* .amenity-box:hover {
+  background: #fff;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+} */

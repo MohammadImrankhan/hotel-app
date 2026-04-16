@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Imran\\Browser Based Technology\\ClientProject\\RubaruAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1E016256-CCD9-4E1A-8182-B1B5BB0DB07F}|RubaruAPI.csproj|d:\\imran\\browser based technology\\clientproject\\rubaruapi\\controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E016256-CCD9-4E1A-8182-B1B5BB0DB07F}|RubaruAPI.csproj|solutionrelative:controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E016256-CCD9-4E1A-8182-B1B5BB0DB07F}|RubaruAPI.csproj|d:\\imran\\browser based technology\\clientproject\\rubaruapi\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E016256-CCD9-4E1A-8182-B1B5BB0DB07F}|RubaruAPI.csproj|solutionrelative:controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E016256-CCD9-4E1A-8182-B1B5BB0DB07F}|RubaruAPI.csproj|d:\\imran\\browser based technology\\clientproject\\rubaruapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1E016256-CCD9-4E1A-8182-B1B5BB0DB07F}|RubaruAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E016256-CCD9-4E1A-8182-B1B5BB0DB07F}|RubaruAPI.csproj|d:\\imran\\browser based technology\\clientproject\\rubaruapi\\model\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E016256-CCD9-4E1A-8182-B1B5BB0DB07F}|RubaruAPI.csproj|solutionrelative:model\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Imran\\Browser Based Technology\\ClientProject\\RubaruAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Imran\\Browser Based Technology\\ClientProject\\RubaruAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-15T09:17:20.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UploadController.cs",
+              "DocumentMoniker": "D:\\Imran\\Browser Based Technology\\ClientProject\\RubaruAPI\\Controllers\\UploadController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UploadController.cs",
+              "ToolTip": "D:\\Imran\\Browser Based Technology\\ClientProject\\RubaruAPI\\Controllers\\UploadController.cs",
+              "RelativeToolTip": "Controllers\\UploadController.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAUwBAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T09:16:52.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Feedback.cs",
+              "DocumentMoniker": "D:\\Imran\\Browser Based Technology\\ClientProject\\RubaruAPI\\Model\\Feedback.cs",
+              "RelativeDocumentMoniker": "Model\\Feedback.cs",
+              "ToolTip": "D:\\Imran\\Browser Based Technology\\ClientProject\\RubaruAPI\\Model\\Feedback.cs",
+              "RelativeToolTip": "Model\\Feedback.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T09:23:27.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FeedbackController.cs",
+              "DocumentMoniker": "D:\\Imran\\Browser Based Technology\\ClientProject\\RubaruAPI\\Controllers\\FeedbackController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FeedbackController.cs",
+              "ToolTip": "D:\\Imran\\Browser Based Technology\\ClientProject\\RubaruAPI\\Controllers\\FeedbackController.cs",
+              "RelativeToolTip": "Controllers\\FeedbackController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T09:17:20.879Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
