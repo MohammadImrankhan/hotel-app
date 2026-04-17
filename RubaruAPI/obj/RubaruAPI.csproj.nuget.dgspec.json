@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Imran\\Browser Based Technology\\ClientProject\\RubaruAPI\\RubaruAPI.csproj": {}
+    "D:\\Projects\\ClientProject\\ClientProject\\RubaruAPI\\RubaruAPI.csproj": {}
   },
   "projects": {
-    "D:\\Imran\\Browser Based Technology\\ClientProject\\RubaruAPI\\RubaruAPI.csproj": {
+    "D:\\Projects\\ClientProject\\ClientProject\\RubaruAPI\\RubaruAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Imran\\Browser Based Technology\\ClientProject\\RubaruAPI\\RubaruAPI.csproj",
+        "projectUniqueName": "D:\\Projects\\ClientProject\\ClientProject\\RubaruAPI\\RubaruAPI.csproj",
         "projectName": "RubaruAPI",
-        "projectPath": "D:\\Imran\\Browser Based Technology\\ClientProject\\RubaruAPI\\RubaruAPI.csproj",
-        "packagesPath": "C:\\Users\\Admin16\\.nuget\\packages\\",
-        "outputPath": "D:\\Imran\\Browser Based Technology\\ClientProject\\RubaruAPI\\obj\\",
+        "projectPath": "D:\\Projects\\ClientProject\\ClientProject\\RubaruAPI\\RubaruAPI.csproj",
+        "packagesPath": "C:\\Users\\ausaf\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\ClientProject\\ClientProject\\RubaruAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin16\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ausaf\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,8 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://www.nuget.org/api/v2/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -91,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

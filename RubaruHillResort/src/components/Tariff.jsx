@@ -70,7 +70,6 @@ export default function Tariff() {
       {selectedRoom && (
         <BookingModal
           room={selectedRoom}
-          nights={selectedNights}
           onClose={() => setSelectedRoom(null)}
         />
       )}
