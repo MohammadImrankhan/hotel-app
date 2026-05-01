@@ -2,11 +2,10 @@ import { useEffect, useState } from "react";
 import { useAuth } from "../AuthContext";
 import FeedbackForm from "./FeedbackForm";
 import FeedbackList from "./FeedbackList";
-const API2 = import.meta.env.VITE_API_URL;
 
 export default function Feedback() {
   const API = import.meta.env.VITE_API_URL;
-
+  console.log(API);
   const { user } = useAuth();
   const [feedbacks, setFeedbacks] = useState([]);
   useEffect(() => {
