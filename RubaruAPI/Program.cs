@@ -17,22 +17,27 @@ namespace RubaruAPI
             {
                 options.AddPolicy("AllowReact",
                     policy => policy
-                        .WithOrigins("http://localhost:5173", "https://your-vercel-app.vercel.app")
-                           
+                        .WithOrigins(
+                            "http://localhost:5173",
+                            "https://hotel-app-phi-two.vercel.app"
+                        )
                         .AllowAnyHeader()
                         .AllowAnyMethod());
             });
+            
 
             var app = builder.Build();
             app.UseCors("AllowReact");
             app.MapGet("/", () => "Rubaru API Running");
+            var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+            app.Urls.Add($"http://0.0.0.0:{port}");
             // Configure the HTTP request pipeline.
             //if (app.Environment.IsDevelopment())
             //{
             //    app.UseSwagger();
             //    app.UseSwaggerUI();
             //}
-             app.UseSwagger();
+            app.UseSwagger();
              app.UseSwaggerUI();
             app.UseHttpsRedirection();
             app.UseAuthorization();
