@@ -24,13 +24,20 @@ namespace RubaruAPI
                         .AllowAnyHeader()
                         .AllowAnyMethod());
             });
-            
+
 
             var app = builder.Build();
-            app.UseCors("AllowReact");
-            app.MapGet("/", () => "Rubaru API Running");
             var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
             app.Urls.Add($"http://0.0.0.0:{port}");
+            app.UseHttpsRedirection();
+            app.UseRouting();
+            app.UseCors("AllowReact");
+
+            app.UseAuthorization();
+            app.UseStaticFiles();
+            app.MapControllers();
+            app.MapGet("/", () => "Rubaru API Running");
+
             // Configure the HTTP request pipeline.
             //if (app.Environment.IsDevelopment())
             //{
@@ -38,11 +45,8 @@ namespace RubaruAPI
             //    app.UseSwaggerUI();
             //}
             app.UseSwagger();
-             app.UseSwaggerUI();
-            app.UseHttpsRedirection();
-            app.UseAuthorization();
-            app.UseStaticFiles();
-            app.MapControllers();
+            app.UseSwaggerUI();
+
             app.Run();
         }
     }
