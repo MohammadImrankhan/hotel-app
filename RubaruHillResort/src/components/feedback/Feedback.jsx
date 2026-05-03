@@ -15,7 +15,7 @@ export default function Feedback() {
 
   const fetchFeedbacks = async () => {
     try {
-      const res = await fetch(`${API}api/Feedback/get-feedback`);
+      const res = await fetch(`${API}/api/Feedback/get-feedback`);
       // const res = await fetch(
       //   "https://localhost:7037/api/Feedback/get-feedback",
       // );
