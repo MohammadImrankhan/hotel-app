@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 export default function RoomManager() {
+  const API = import.meta.env.VITE_API_U;
   const [rooms, setRooms] = useState([]);
   const [roomTypes, setRoomTypes] = useState([]);
   const [form, setForm] = useState({
@@ -14,14 +15,14 @@ export default function RoomManager() {
   const [editId, setEditId] = useState(null);
   // 🔹 Load room Type
   const loadRoomsType = async () => {
-    fetch("https://localhost:7037/api/user/RoomType")
+    fetch(`${API}/api/user/RoomType`)
       .then((res) => res.json())
       .then((data) => setRoomTypes(data));
   };
   // 🔹 Load rooms
   const loadRooms = async () => {
     try {
-      const res = await fetch("https://localhost:7037/api/User/Rooms");
+      const res = await fetch(`${API}/api/User/Rooms`);
       if (!res.ok) {
         throw new Error("API failed: " + res.status);
       }
@@ -51,7 +52,7 @@ export default function RoomManager() {
     }
 
     if (editId) {
-      const res = await fetch("https://localhost:7037/api/User/UpdateRoom", {
+      const res = await fetch(`${API}/api/User/UpdateRoom`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -66,7 +67,7 @@ export default function RoomManager() {
         roomDescription: form.roomDescription,
         roomTypeID: parseInt(form.roomTypeID),
       };
-      const res = await fetch("https://localhost:7037/api/User/Room", {
+      const res = await fetch(`${API}/api/User/Room`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -98,7 +99,7 @@ export default function RoomManager() {
     if (!window.confirm("Delete this room?")) return;
 
     try {
-      const res = await fetch(`https://localhost:7037/api/User/room/${id}`, {
+      const res = await fetch(`${API}/api/User/room/${id}`, {
         method: "DELETE",
       });
 

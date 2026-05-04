@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import ScrollReveal from "../ui/ScrollReveal";
 
 export default function FeedbackForm({ feedbacks, refresh }) {
+  const API = import.meta.env.VITE_API_URL;
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [hoverRating, setHoverRating] = useState(0);
-
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -23,16 +23,13 @@ export default function FeedbackForm({ feedbacks, refresh }) {
     e.preventDefault();
     if (form.rating === 0) return;
     setSubmitting(true);
-    const res = await fetch(
-      "https://localhost:7037/api/Feedback/save-feedback",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(form),
+    const res = await fetch(`${API}/api/Feedback/save-feedback`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
       },
-    );
+      body: JSON.stringify(form),
+    });
     setSubmitting(false);
     if (res.ok) {
       setSubmitted(true);

@@ -1,5 +1,6 @@
 export default function RoomCard({ room, onPreview, onSelect }) {
-  const imageUrl = `https://localhost:7037/${room.imageurl}`;
+  const API = import.meta.env.VITE_API_URL;
+  const imageUrl = `${API}/${room.imageurl}`;
 
   return (
     <div className="bg-white shadow-lg hover:shadow-xl transition rounded-xl overflow-hidden">

@@ -11,7 +11,8 @@ export default function UploadImage() {
 
   // Load Room Types
   useEffect(() => {
-    fetch("https://localhost:7037/api/user/RoomType")
+    const API = import.meta.env.VITE_API_URL;
+    fetch(`${API}/api/user/RoomType`)
       .then((res) => res.json())
       .then((data) => setRoomTypes(data));
   }, []);
@@ -19,9 +20,7 @@ export default function UploadImage() {
   const handleRoomTypeChange = async (id) => {
     setRoomTypeId(id);
 
-    const res = await fetch(
-      `https://localhost:7037/api/user/Rooms?roomtypeid=${id}`,
-    );
+    const res = await fetch(`${API}/api/user/Rooms?roomtypeid=${id}`);
     const data = await res.json();
     setRooms(data);
   };
@@ -44,7 +43,7 @@ export default function UploadImage() {
     formData.append("RoomId", parseInt(roomId));
 
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://localhost:7037/api/Upload/UploadMultiple");
+    xhr.open("POST", `${API}/api/Upload/UploadMultiple`);
 
     xhr.upload.onprogress = (event) => {
       if (event.lengthComputable) {

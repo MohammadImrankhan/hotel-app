@@ -17,7 +17,8 @@ export default function Tariff() {
 
   const fetchRooms = async () => {
     try {
-      const res = await fetch("https://localhost:7037/api/user/tariff");
+      const API = import.meta.env.VITE_API_URL;
+      const res = await fetch(`${API}/api/user/tariff`);
       const data = await res.json();
 
       // 🔥 Transform API → Luxury format
@@ -26,7 +27,7 @@ export default function Tariff() {
         name: r.roomName,
         subtitle: r.season || "Premium Stay",
         price: r.price,
-        image: `https://localhost:7037/${r.imageurl}`,
+        image: `${API}/${r.imageurl}`,
         size: "450 sq ft", // optional static or future API
         features: [
           "King Size Bed",
@@ -70,6 +71,7 @@ export default function Tariff() {
       {selectedRoom && (
         <BookingModal
           room={selectedRoom}
+          nights={selectedNights}
           onClose={() => setSelectedRoom(null)}
         />
       )}

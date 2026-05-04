@@ -16,14 +16,15 @@ export default function TariffAdmin() {
 
   // Load Rooms
   const loadRooms = async () => {
-    const res = await fetch("https://localhost:7037/api/user/rooms");
+    const API = import.meta.env.VITE_API_URL;
+    const res = await fetch(`${API}/api/user/rooms`);
     const data = await res.json();
     setRooms(data);
   };
 
   // Load Tariff
   const loadData = async () => {
-    const res = await fetch("https://localhost:7037/api/user/tariff");
+    const res = await fetch(`${API}/api/user/tariff`);
     const result = await res.json();
     setData(result);
   };
@@ -40,7 +41,7 @@ export default function TariffAdmin() {
       return;
     }
 
-    await fetch("https://localhost:7037/api/user/save-tariff", {
+    await fetch(`${API}/api/user/save-tariff`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -81,7 +82,7 @@ export default function TariffAdmin() {
   const remove = async (id) => {
     if (!window.confirm("Delete this tariff?")) return;
 
-    await fetch(`https://localhost:7037/api/user/tariff/${id}`, {
+    await fetch(`${API}/api/user/tariff/${id}`, {
       method: "DELETE",
     });
 

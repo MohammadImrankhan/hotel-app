@@ -27,7 +27,8 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (username, password) => {
     try {
-      const res = await fetch("https://localhost:7037/api/user/login", {
+      const API = import.meta.env.VITE_API_URL;
+      const res = await fetch(`${API}/api/user/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

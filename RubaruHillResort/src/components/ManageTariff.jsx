@@ -2,23 +2,22 @@ import { useEffect, useState } from "react";
 
 export default function ManageTariff() {
   const [data, setData] = useState([]);
-
+  const API = import.meta.env.VITE_API_URL;
   const load = async () => {
-    const res = await fetch("https://localhost:7037/api/user/tariff");
+    const res = await fetch(`${API}/api/user/tariff`);
     const d = await res.json();
     setData(d);
   };
 
   const update = async (id, price) => {
-    await fetch(
-      `https://localhost:7037/api/user/update-tariff?id=${id}&price=${price}`,
-      { method: "PUT" },
-    );
+    await fetch(`${API}/api/user/update-tariff?id=${id}&price=${price}`, {
+      method: "PUT",
+    });
     load();
   };
 
   const remove = async (id) => {
-    await fetch(`https://localhost:7037/api/user/delete-tariff?id=${id}`, {
+    await fetch(`${API}}/api/user/delete-tariff?id=${id}`, {
       method: "DELETE",
     });
     load();

@@ -7,7 +7,9 @@ export default function GalleryCard({
   onDelete,
   isAdmin,
 }) {
-  const imageUrl = `https://localhost:7037/${img.imageUrl}`;
+  const API = import.meta.env.VITE_API_URL;
+
+  const imageUrl = `${API}/${img.imageUrl}`;
 
   return (
     <div

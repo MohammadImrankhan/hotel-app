@@ -10,7 +10,7 @@ export default function NightSelector({ selectedNights, setSelectedNights }) {
         </p>
 
         <div className="flex gap-2">
-          {[1, 2, 3, 5, 7].map((n) => (
+          {[1, 2, 3, 4, 5].map((n) => (
             <button
               key={n}
               onClick={() => setSelectedNights(n)}

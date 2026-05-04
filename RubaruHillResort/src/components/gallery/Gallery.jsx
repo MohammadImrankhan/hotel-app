@@ -5,7 +5,8 @@ import ImagePreviewModal from "../ImagePreviewModal";
 
 export default function Gallery() {
   const [previewIndex, setPreviewIndex] = useState(null);
-
+  const API = import.meta.env.VITE_API_URL;
+  console.log(API);
   const categories = ["All", "Rooms & Suites", "Amenities", "Dining", "Nature"];
   const [activeCategory, setActiveCategory] = useState("All");
   const [images, setImages] = useState([]);
@@ -13,10 +14,9 @@ export default function Gallery() {
   const { user } = useAuth();
   let loadImages = null;
   useEffect(() => {
-    console.log("imran");
     loadImages = async () => {
       try {
-        let res = await fetch("https://localhost:7037/api/Upload/images");
+        let res = await fetch(`${API}/api/Upload/images`);
         let data = await res.json();
         setImages(data);
       } catch (err) {
@@ -24,18 +24,9 @@ export default function Gallery() {
       }
     };
   }, [previewIndex]);
-  // const loadImages = async () => {
-  //   try {
-  //     const res = await fetch("https://localhost:7037/api/Upload/images");
-  //     const data = await res.json();
-  //     setImages(data);
-  //   } catch (err) {
-  //     console.error(err);
-  //   }
-  // };
 
   const deleteImage = async (id) => {
-    await fetch(`https://localhost:7037/api/upload/delete-image?id=${id}`, {
+    await fetch(`${API}/api/upload/delete-image?id=${id}`, {
       method: "DELETE",
     });
     loadImages();
@@ -97,9 +88,7 @@ export default function Gallery() {
           />
           {previewIndex !== null && (
             <ImagePreviewModal
-              images={images.map(
-                (img) => `https://localhost:7037/${img.imageUrl}`,
-              )}
+              images={images.map((img) => `${API}/${img.imageUrl}`)}
               index={previewIndex}
               onClose={() => setPreviewIndex(null)}
             />
