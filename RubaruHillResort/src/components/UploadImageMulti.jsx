@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useDropzone } from "react-dropzone";
-
+const API = import.meta.env.VITE_API_URL;
 export default function UploadImage() {
   const [files, setFiles] = useState([]);
   const [roomId, setRoomId] = useState("");
@@ -8,7 +8,7 @@ export default function UploadImage() {
   const [roomTypes, setRoomTypes] = useState([]);
   const [rooms, setRooms] = useState([]);
   const [roomTypeId, setRoomTypeId] = useState("");
-  const API = import.meta.env.VITE_API_URL;
+
   // Load Room Types
   useEffect(() => {
     fetch(`${API}/api/user/RoomType`)
