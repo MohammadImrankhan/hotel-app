@@ -2,11 +2,10 @@ import { useEffect, useState } from "react";
 import { useAuth } from "../AuthContext";
 import GalleryGrid from "./GalleryGrid";
 import ImagePreviewModal from "../ImagePreviewModal";
-
+const API = import.meta.env.VITE_API_URL;
 export default function Gallery() {
   const [previewIndex, setPreviewIndex] = useState(null);
-  const API = import.meta.env.VITE_API_URL;
-  console.log(API);
+
   const categories = ["All", "Rooms & Suites", "Amenities", "Dining", "Nature"];
   const [activeCategory, setActiveCategory] = useState("All");
   const [images, setImages] = useState([]);
