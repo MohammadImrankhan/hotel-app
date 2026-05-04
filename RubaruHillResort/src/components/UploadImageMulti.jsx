@@ -8,10 +8,9 @@ export default function UploadImage() {
   const [roomTypes, setRoomTypes] = useState([]);
   const [rooms, setRooms] = useState([]);
   const [roomTypeId, setRoomTypeId] = useState("");
-
+  const API = import.meta.env.VITE_API_URL;
   // Load Room Types
   useEffect(() => {
-    const API = import.meta.env.VITE_API_URL;
     fetch(`${API}/api/user/RoomType`)
       .then((res) => res.json())
       .then((data) => setRoomTypes(data));
